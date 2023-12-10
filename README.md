@@ -13,25 +13,27 @@ Juego en python y servidor en C. Que permite jugar hasta 4 jugadores en una mism
 
 Es un juego de acción, donde los jugadores se mueven en un laberinto y deben colocar bombas para destruir obstáculos y eliminar a los otros jugadores.
 
-![Juego en ejecución](./src/assets/img/game_v0.5.png)
+![Juego en ejecucion](./src/assets/img/game_v0.5.png)
 
 
 ###### Instalaciones necesarias para ejecutar el juego
 
-
-
 ###### Manual del Juego
 
+w,s,a,d: Movimiento del jugador
+space: Colocar bomba
 
-###### Reglas
+###### Reglas del Juego
 
+Tres vidas por jugador.
+El jugador que quede vivo gana.
 
 ###### Arquitectura General 
  
 Desde el punto de Sistemas Operativos, el juego tiene una arquitectura cliente servidor, donde el servidor es un software multiproceso y multihebra con una gestión de recursos que le permita asegurar su coordinación y consistencia (procesos, hebras, memoria y archivos). Por el lado del cliente, este es un software gráfico donde se despliega el contenido del juego y permite capturar la interacción del usuario. 
  - A continuación, un esquema: 
 
-![Arquitectura]("./src/assets/img/arquitectura.png")
+![Arquitectura](./src/assets/img/arquitectura_juego.png)
  
 ##### Ejemplo de ejecución del juego: 
 
